@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-    <title>LIFF - LINE  Front-end Framework</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
 </head>
 <body>
-    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
-    <script>
-        async function main() {
-            await liff.init({ liffId:"1656315395-21bJlj1k" })
-            await liff.shareTargetPicker([
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1656865450-19WaamlG" })
+      await liff.shareTargetPicker([
+        {
+          type: "flex",
+          altText: "ประกันชดเชยรายได้",
+          contents: {
+            "type": "bubble",
+            "hero": {
+              "type": "video",
+              "url": "https://res.cloudinary.com/garantee24/video/upload/v1660641927/blogger/%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%E0%B8%9B%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%8A%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%A2_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%8A%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%88%E0%B8%B2%E0%B8%81_anc_insurtech_zbpz4u.mp4",
+              "previewUrl": "https://res.cloudinary.com/garantee24/image/upload/v1660282980/blogger/garantee24_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B524_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%8A%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89500.jpg",
+              "altContent": {
+                "type": "image",
+                "size": "full",
+                "aspectMode": "cover",
+                "url": "https://res.cloudinary.com/garantee24/image/upload/v1660282980/blogger/garantee24_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B524_%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%8A%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%891000.jpg"
+              },
+              "action": {
+                "type": "uri",
+                "label": "คลิกเลย",
+                "uri": "https://prakun.com/income-protect?agt_id=4203"
+              },
+              "aspectRatio": "5:4"
+            },
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
                 {
-                    type: "flex",
-                    altText: "Flex Message from Share Targt Picker",
-                    contents: {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "image",
-        "url": "https://garantee24.com/wp-content/uploads/2021/08/add-friends.png",
-        "size": "full",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://g.page/garantee24"
+                  "type": "text",
+                  "text": "ชดเชยรายได้ หากต้องนอนโรงพยาบาล",
+                  "color": "#2403fc"
+                },
+                {
+                  "type": "text",
+                  "text": "ซื้อออนไลน์ง่ายๆ เหมือนประกันโควิด",
+                  "color": "#2403fc"
+                },
+                {
+                  "type": "text",
+                  "text": "เริ่มต้นเพียง 500 บาท/ปี",
+                  "color": "#2403fc"
+                }
+              ]
+            },
+            "footer": {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "ข้อมูลเพิ่มเติม",
+                        "uri": "https://prakun.com/income-protect?agt_id=4203"
+                      },
+                      "style": "primary",
+                      "offsetEnd": "3px"
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "action": {
+                    "type": "uri",
+                    "label": "แชร์ให้เพื่อน",
+                    "uri": "http://linecorp.com/"
+                  },
+                  "style": "secondary",
+                  "offsetStart": "3px"
+                }
+              ]
+            },
+            "styles": {
+              "body": {
+                "backgroundColor": "#67e0e0"
+              },
+              "footer": {
+                "backgroundColor": "#b2f7f7"
+              }
+            }
+          }
         }
-      }
-    ],
-    "paddingAll": "0px"
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "ส่วนลด 100 บาท ซื้อพ.ร.บ/ต่อภาษี",
-        "size": "xs",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://page.line.me/garantee24"
-        }
-      },
-      {
-        "type": "text",
-        "text": "ส่วนลด 300 บาท ซื้อประกันประเภท 3",
-        "size": "xs",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://page.line.me/garantee24"
-        }
-      },
-      {
-        "type": "text",
-        "text": "ส่วนลด 500 บาท ซื้อประกันประเภท 1,2+,3+",
-        "size": "xs",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://page.line.me/garantee24"
-        }
-      },
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "รับคูปองฟรี!! คลิก",
-          "uri": "https://page.line.me/garantee24"
-        },
-        "margin": "sm",
-        "height": "sm"
-      },
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "แชร์ให้เพื่อน",
-          "uri": "https://liff.line.me/1656332092-PRKOrb1e"
-        },
-        "style": "primary",
-        "margin": "sm",
-        "height": "sm"
-      }
-    ]
-  }
-}
-                }         
-            ])
-            liff.closeWindow()
-        }
-        main()
-    </script>
-    
+      ])
+      liff.closeWindow()
+    }
+    main()
+  </script>
 </body>
-
 </html>
